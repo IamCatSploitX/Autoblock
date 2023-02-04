@@ -1,0 +1,18 @@
+    local solar = false
+    local cylane = "f"
+    
+    local m = game:GetService"Players".LocalPlayer:GetMouse()
+    m.KeyDown:connect(function(k)
+       if k == cylane then
+           solar = not solar
+       end
+    end)
+    
+    spawn(function()
+       while wait() do
+           if solar then
+               game.ReplicatedStorage.Events.WandEvent:FireServer(3)
+         wait(1.983)
+       end
+    end
+    end)
