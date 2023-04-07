@@ -1,4 +1,3 @@
-game.Players.USERHERE:Kick("You are blacklisted from this Gui Reason : Exploit Abuse Dm CatSploitAdmin#9254 to appeal")
 local enabled = true
 local key = "f"
 
